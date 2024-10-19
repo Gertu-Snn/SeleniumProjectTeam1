@@ -1,0 +1,482 @@
+{
+  "id": "fdfabff2-4b48-41d5-8142-cca989e681e5",
+  "version": "2.0",
+  "name": "Euronics page",
+  "url": "https://www.euronics.ee/",
+  "tests": [{
+    "id": "9072a8bc-1cdc-4d27-a583-9456f99fcf94",
+    "name": "Spell check of the search bar",
+    "commands": [{
+      "id": "8bed9564-ee43-4e52-957b-d50ab750fbd8",
+      "comment": "",
+      "command": "open",
+      "target": "https://www.euronics.ee/",
+      "targets": [],
+      "value": ""
+    }, {
+      "id": "590cec4c-b5de-4dfc-afd6-a380d87989cc",
+      "comment": "",
+      "command": "click",
+      "target": "id=searchKeyword",
+      "targets": [
+        ["id=searchKeyword", "id"],
+        ["css=#searchKeyword", "css:finder"],
+        ["xpath=//input[@id='searchKeyword']", "xpath:attributes"],
+        ["xpath=//form[@id='searchForm']/input", "xpath:idRelative"],
+        ["xpath=//form/input", "xpath:position"]
+      ],
+      "value": ""
+    }, {
+      "id": "f8813ae7-ad12-471e-8864-f4419f008e54",
+      "comment": "",
+      "command": "type",
+      "target": "id=searchKeyword",
+      "targets": [
+        ["id=searchKeyword", "id"],
+        ["css=#searchKeyword", "css:finder"],
+        ["xpath=//input[@id='searchKeyword']", "xpath:attributes"],
+        ["xpath=//form[@id='searchForm']/input", "xpath:idRelative"],
+        ["xpath=//form/input", "xpath:position"]
+      ],
+      "value": "keebiseprinter"
+    }, {
+      "id": "3e309802-baab-4513-97d1-6e2447e4647b",
+      "comment": "",
+      "command": "sendKeys",
+      "target": "id=searchKeyword",
+      "targets": [
+        ["id=searchKeyword", "id"],
+        ["css=#searchKeyword", "css:finder"],
+        ["xpath=//input[@id='searchKeyword']", "xpath:attributes"],
+        ["xpath=//form[@id='searchForm']/input", "xpath:idRelative"],
+        ["xpath=//form/input", "xpath:position"]
+      ],
+      "value": "${KEY_ENTER}"
+    }, {
+      "id": "3e554946-b247-458a-ab90-16f81e9443a0",
+      "comment": "",
+      "command": "runScript",
+      "target": "window.scrollTo(0,138)",
+      "targets": [],
+      "value": ""
+    }, {
+      "id": "d4039ac5-a131-4bdf-a5ca-d9b3dd5614e0",
+      "comment": "",
+      "command": "verifyText",
+      "target": "css=.product-card:nth-child(1) .product-card__heading",
+      "targets": [],
+      "value": "Brother P-Touch CUBE, valge - Juhtmevaba kleebiseprinter"
+    }, {
+      "id": "2744a704-d417-4673-9abf-4cecf3fe3804",
+      "comment": "",
+      "command": "close",
+      "target": "",
+      "targets": [],
+      "value": ""
+    }]
+  }, {
+    "id": "a4f8264d-733e-4a48-ac8c-4dc83b5b95d9",
+    "name": "Searching with dictonary synonyms",
+    "commands": [{
+      "id": "f0b1fcdf-fd34-41cb-b9d4-d7ab9b538ee8",
+      "comment": "",
+      "command": "open",
+      "target": "https://www.euronics.ee/",
+      "targets": [],
+      "value": ""
+    }, {
+      "id": "08b1ef46-e357-409f-b062-8255dedda56a",
+      "comment": "",
+      "command": "setWindowSize",
+      "target": "500x798",
+      "targets": [],
+      "value": ""
+    }, {
+      "id": "2689647b-8308-4ea0-8e49-aa65411b517d",
+      "comment": "",
+      "command": "click",
+      "target": "id=searchKeyword",
+      "targets": [
+        ["id=searchKeyword", "id"],
+        ["css=#searchKeyword", "css:finder"],
+        ["xpath=//input[@id='searchKeyword']", "xpath:attributes"],
+        ["xpath=//form[@id='searchForm']/input", "xpath:idRelative"],
+        ["xpath=//form/input", "xpath:position"]
+      ],
+      "value": ""
+    }, {
+      "id": "3ac4def1-3c67-432a-8da4-98341e215198",
+      "comment": "",
+      "command": "type",
+      "target": "id=searchKeyword",
+      "targets": [
+        ["id=searchKeyword", "id"],
+        ["css=#searchKeyword", "css:finder"],
+        ["xpath=//input[@id='searchKeyword']", "xpath:attributes"],
+        ["xpath=//form[@id='searchForm']/input", "xpath:idRelative"],
+        ["xpath=//form/input", "xpath:position"]
+      ],
+      "value": "teler"
+    }, {
+      "id": "2620e0af-54dd-46ac-a210-265ab97cc6b7",
+      "comment": "",
+      "command": "click",
+      "target": "linkText=teler",
+      "targets": [
+        ["linkText=teler", "linkText"],
+        ["css=#suggestions-suggestions > .search-result__item:nth-child(1)", "css:finder"],
+        ["xpath=//div[@id='suggestions-suggestions']/a", "xpath:idRelative"],
+        ["xpath=//a[contains(@href, 'https://www.euronics.ee/otsing/teler')]", "xpath:href"],
+        ["xpath=//div[3]/a", "xpath:position"],
+        ["xpath=//a[contains(.,'teler')]", "xpath:innerText"]
+      ],
+      "value": ""
+    }, {
+      "id": "f20f478c-eb59-4861-a0b8-cd268575870a",
+      "comment": "",
+      "command": "click",
+      "target": "css=.product-card:nth-child(1) .product-card__title",
+      "targets": [
+        ["css=.product-card:nth-child(1) .product-card__title", "css:finder"],
+        ["xpath=//h5/span", "xpath:position"],
+        ["xpath=//span[contains(.,'Philips 7608, 75\", Ultra HD, LED LCD, jalad äärtes, hall - Teler')]", "xpath:innerText"]
+      ],
+      "value": ""
+    }, {
+      "id": "e4026617-f9eb-4427-83f5-b8cef9ce4bb9",
+      "comment": "",
+      "command": "click",
+      "target": "css=.col-lg-5",
+      "targets": [
+        ["css=.col-lg-5", "css:finder"],
+        ["xpath=//div[11]/div/div[3]", "xpath:position"]
+      ],
+      "value": ""
+    }, {
+      "id": "42ba1dd8-898e-4a99-9489-2afb7f1137a5",
+      "comment": "",
+      "command": "verifyText",
+      "target": "css=.product > #product-description",
+      "targets": [],
+      "value": "Philips 7608, 75\", Ultra HD, LED LCD, jalad äärtes, hall - Teler"
+    }, {
+      "id": "b1e6fe0f-1cea-40b2-bc41-2f6a0029eca7",
+      "comment": "",
+      "command": "click",
+      "target": "css=.product > #product-description",
+      "targets": [
+        ["css=.product > #product-description", "css:finder"],
+        ["xpath=(//h1[@id='product-description'])[2]", "xpath:attributes"],
+        ["xpath=//section/h1", "xpath:position"]
+      ],
+      "value": ""
+    }, {
+      "id": "e7e67a6c-81f0-4bb6-8ff4-91c658a2d5b4",
+      "comment": "",
+      "command": "close",
+      "target": "",
+      "targets": [],
+      "value": ""
+    }]
+  }, {
+    "id": "cc6c1a63-a3be-447e-84d2-d182ce85fd1a",
+    "name": "Giving recommendations after the first letter",
+    "commands": [{
+      "id": "1e8c0f4a-7650-4efc-ba84-b642ad20ed6f",
+      "comment": "",
+      "command": "open",
+      "target": "https://www.euronics.ee/",
+      "targets": [],
+      "value": ""
+    }, {
+      "id": "523b0229-5b89-403f-a34a-ad520ec526f9",
+      "comment": "",
+      "command": "click",
+      "target": "id=searchKeyword",
+      "targets": [
+        ["id=searchKeyword", "id"],
+        ["css=#searchKeyword", "css:finder"],
+        ["xpath=//input[@id='searchKeyword']", "xpath:attributes"],
+        ["xpath=//form[@id='searchForm']/input", "xpath:idRelative"],
+        ["xpath=//form/input", "xpath:position"]
+      ],
+      "value": ""
+    }, {
+      "id": "f91409f8-0de7-4d05-95f9-ed8d99742335",
+      "comment": "",
+      "command": "type",
+      "target": "id=searchKeyword",
+      "targets": [
+        ["id=searchKeyword", "id"],
+        ["css=#searchKeyword", "css:finder"],
+        ["xpath=//input[@id='searchKeyword']", "xpath:attributes"],
+        ["xpath=//form[@id='searchForm']/input", "xpath:idRelative"],
+        ["xpath=//form/input", "xpath:position"]
+      ],
+      "value": "f"
+    }, {
+      "id": "1ff1b923-e651-4f90-9427-d00ac637a0e0",
+      "comment": "",
+      "command": "click",
+      "target": "linkText=föön",
+      "targets": [
+        ["linkText=föön", "linkText"],
+        ["css=#suggestions-suggestions > .search-result__item:nth-child(4)", "css:finder"],
+        ["xpath=//div[@id='suggestions-suggestions']/a[4]", "xpath:idRelative"],
+        ["xpath=//a[contains(@href, 'https://www.euronics.ee/otsing/föön')]", "xpath:href"],
+        ["xpath=//a[4]", "xpath:position"],
+        ["xpath=//a[contains(.,'föön')]", "xpath:innerText"]
+      ],
+      "value": ""
+    }, {
+      "id": "4bc864ab-1e70-4c63-a79c-09a30027731c",
+      "comment": "",
+      "command": "runScript",
+      "target": "window.scrollTo(0,168)",
+      "targets": [],
+      "value": ""
+    }, {
+      "id": "b0a24a63-bcb8-496a-b166-56645bf6926c",
+      "comment": "",
+      "command": "close",
+      "target": "",
+      "targets": [],
+      "value": ""
+    }]
+  }, {
+    "id": "204e77a3-5156-4350-9aaa-a27d862dc963",
+    "name": "Search bar has a history of recent searches",
+    "commands": [{
+      "id": "264a1806-a83f-45f6-8714-9d7dd3a2e19b",
+      "comment": "",
+      "command": "open",
+      "target": "https://www.euronics.ee/",
+      "targets": [],
+      "value": ""
+    }, {
+      "id": "4fab8d39-68a5-4f09-b360-dad92387146f",
+      "comment": "",
+      "command": "setWindowSize",
+      "target": "503x798",
+      "targets": [],
+      "value": ""
+    }, {
+      "id": "f098a6e3-c2a3-4d9e-a8ae-4dc8f07de828",
+      "comment": "",
+      "command": "click",
+      "target": "id=searchKeyword",
+      "targets": [
+        ["id=searchKeyword", "id"],
+        ["css=#searchKeyword", "css:finder"],
+        ["xpath=//input[@id='searchKeyword']", "xpath:attributes"],
+        ["xpath=//form[@id='searchForm']/input", "xpath:idRelative"],
+        ["xpath=//form/input", "xpath:position"]
+      ],
+      "value": ""
+    }, {
+      "id": "184720e1-2a22-458f-98a7-e0b7b97629a4",
+      "comment": "",
+      "command": "click",
+      "target": "linkText=kleebiseprinter",
+      "targets": [
+        ["linkText=kleebiseprinter", "linkText"],
+        ["css=.search-result__item:nth-child(1)", "css:finder"],
+        ["xpath=//a[contains(text(),'kleebiseprinter')]", "xpath:link"],
+        ["xpath=//div[@id='suggestions-suggestions']/a", "xpath:idRelative"],
+        ["xpath=//a[contains(@href, 'https://www.euronics.ee/otsing/kleebiseprinter')]", "xpath:href"],
+        ["xpath=//div[3]/a", "xpath:position"],
+        ["xpath=//a[contains(.,'kleebiseprinter')]", "xpath:innerText"]
+      ],
+      "value": ""
+    }, {
+      "id": "7756f2e3-cb80-41e7-95e2-4c601c12532a",
+      "comment": "",
+      "command": "mouseOver",
+      "target": "css=.product-card:nth-child(1) .product-card__title",
+      "targets": [
+        ["css=.product-card:nth-child(1) .product-card__title", "css:finder"],
+        ["xpath=//h5/span", "xpath:position"],
+        ["xpath=//span[contains(.,'Brother P-Touch CUBE, valge - Juhtmevaba kleebiseprinter')]", "xpath:innerText"]
+      ],
+      "value": ""
+    }, {
+      "id": "5b57d4bd-45f2-4b89-96f6-7cc2bc10a586",
+      "comment": "",
+      "command": "click",
+      "target": "css=.product-card:nth-child(1) .product-card__title",
+      "targets": [
+        ["css=.product-card:nth-child(1) .product-card__title", "css:finder"],
+        ["xpath=//h5/span", "xpath:position"],
+        ["xpath=//span[contains(.,'Brother P-Touch CUBE, valge - Juhtmevaba kleebiseprinter')]", "xpath:innerText"]
+      ],
+      "value": ""
+    }, {
+      "id": "7427a593-fb7c-4fa8-85e9-cd8f7c7c3457",
+      "comment": "",
+      "command": "click",
+      "target": "css=.product > #product-description",
+      "targets": [
+        ["css=.product > #product-description", "css:finder"],
+        ["xpath=(//h1[@id='product-description'])[2]", "xpath:attributes"],
+        ["xpath=//section/h1", "xpath:position"]
+      ],
+      "value": ""
+    }, {
+      "id": "1673b393-23e9-4bbb-be8a-ebb53e5de219",
+      "comment": "",
+      "command": "click",
+      "target": "css=.product > #product-description",
+      "targets": [
+        ["css=.product > #product-description", "css:finder"],
+        ["xpath=(//h1[@id='product-description'])[2]", "xpath:attributes"],
+        ["xpath=//section/h1", "xpath:position"]
+      ],
+      "value": ""
+    }, {
+      "id": "350493ad-5801-460c-ab93-f3fae959798b",
+      "comment": "",
+      "command": "verifyText",
+      "target": "css=.product > #product-description",
+      "targets": [],
+      "value": "Brother P-Touch CUBE, valge - Juhtmevaba kleebiseprinter"
+    }, {
+      "id": "1f624a7f-83d5-4605-b012-399a381c7598",
+      "comment": "",
+      "command": "close",
+      "target": "",
+      "targets": [],
+      "value": ""
+    }]
+  }, {
+    "id": "c149b831-34d4-44b5-aa4c-50ac35708e96",
+    "name": "Search suggestions is available",
+    "commands": [{
+      "id": "033abc6b-ca56-491f-abcc-a76f02472cb3",
+      "comment": "",
+      "command": "open",
+      "target": "https://www.euronics.ee/",
+      "targets": [],
+      "value": ""
+    }, {
+      "id": "51541741-128e-4910-8360-d7ed9249a1d9",
+      "comment": "",
+      "command": "setWindowSize",
+      "target": "519x798",
+      "targets": [],
+      "value": ""
+    }, {
+      "id": "f7d83d91-fd07-4359-89a0-b030acf75aea",
+      "comment": "",
+      "command": "click",
+      "target": "id=searchKeyword",
+      "targets": [
+        ["id=searchKeyword", "id"],
+        ["css=#searchKeyword", "css:finder"],
+        ["xpath=//input[@id='searchKeyword']", "xpath:attributes"],
+        ["xpath=//form[@id='searchForm']/input", "xpath:idRelative"],
+        ["xpath=//form/input", "xpath:position"]
+      ],
+      "value": ""
+    }, {
+      "id": "53408b69-9921-4901-8a7c-9e3468c679fb",
+      "comment": "",
+      "command": "type",
+      "target": "id=searchKeyword",
+      "targets": [
+        ["id=searchKeyword", "id"],
+        ["css=#searchKeyword", "css:finder"],
+        ["xpath=//input[@id='searchKeyword']", "xpath:attributes"],
+        ["xpath=//form[@id='searchForm']/input", "xpath:idRelative"],
+        ["xpath=//form/input", "xpath:position"]
+      ],
+      "value": "e"
+    }, {
+      "id": "6796c354-2883-4dd1-b862-3b9c238368f9",
+      "comment": "",
+      "command": "click",
+      "target": "css=#suggestions-suggestions > .search-result__item:nth-child(5) > span",
+      "targets": [
+        ["css=#suggestions-suggestions > .search-result__item:nth-child(5) > span", "css:finder"],
+        ["xpath=//div[@id='suggestions-suggestions']/a[5]/span", "xpath:idRelative"],
+        ["xpath=//a[5]/span", "xpath:position"],
+        ["xpath=//span[contains(.,'espresso')]", "xpath:innerText"]
+      ],
+      "value": ""
+    }, {
+      "id": "db433408-4cd1-4670-a8d7-950d9a33f80e",
+      "comment": "",
+      "command": "verifyText",
+      "target": "css=.product-card:nth-child(1) .price",
+      "targets": [],
+      "value": "2499 €"
+    }, {
+      "id": "16368064-0214-4268-be42-6c6f68306ddd",
+      "comment": "",
+      "command": "close",
+      "target": "",
+      "targets": [],
+      "value": ""
+    }]
+  }, {
+    "id": "f506e5ed-f2f6-4015-bdb0-7d9797876694",
+    "name": "As a user I writing nothing in search bar and pressing enter",
+    "commands": [{
+      "id": "182dd19a-de46-4ed4-8f1e-8ac31ea2b4c7",
+      "comment": "",
+      "command": "open",
+      "target": "https://www.euronics.ee/",
+      "targets": [],
+      "value": ""
+    }, {
+      "id": "7a83605c-ed0d-4ce0-9f53-e1776fe2d654",
+      "comment": "",
+      "command": "click",
+      "target": "id=searchKeyword",
+      "targets": [
+        ["id=searchKeyword", "id"],
+        ["css=#searchKeyword", "css:finder"],
+        ["xpath=//input[@id='searchKeyword']", "xpath:attributes"],
+        ["xpath=//form[@id='searchForm']/input", "xpath:idRelative"],
+        ["xpath=//form/input", "xpath:position"]
+      ],
+      "value": ""
+    }, {
+      "id": "474849eb-ca15-40b5-8951-df9b57840d4e",
+      "comment": "",
+      "command": "sendKeys",
+      "target": "id=searchKeyword",
+      "targets": [
+        ["id=searchKeyword", "id"],
+        ["css=#searchKeyword", "css:finder"],
+        ["xpath=//input[@id='searchKeyword']", "xpath:attributes"],
+        ["xpath=//form[@id='searchForm']/input", "xpath:idRelative"],
+        ["xpath=//form/input", "xpath:position"]
+      ],
+      "value": "${KEY_ENTER}"
+    }, {
+      "id": "7105e85c-46e5-41ab-9d91-0aef8b806ea5",
+      "comment": "",
+      "command": "verifyElementPresent",
+      "target": "css=.image-slider__item--active .image-slider__img",
+      "targets": [],
+      "value": ""
+    }, {
+      "id": "6d90755f-210f-43dd-aeb0-64fcb159e2e7",
+      "comment": "",
+      "command": "close",
+      "target": "",
+      "targets": [],
+      "value": ""
+    }]
+  }],
+  "suites": [{
+    "id": "fa88ee19-5a7f-487b-9598-75e8be4115b5",
+    "name": "Search bar functionalities",
+    "persistSession": false,
+    "parallel": false,
+    "timeout": 300,
+    "tests": ["cc6c1a63-a3be-447e-84d2-d182ce85fd1a", "204e77a3-5156-4350-9aaa-a27d862dc963", "c149b831-34d4-44b5-aa4c-50ac35708e96", "a4f8264d-733e-4a48-ac8c-4dc83b5b95d9", "9072a8bc-1cdc-4d27-a583-9456f99fcf94", "f506e5ed-f2f6-4015-bdb0-7d9797876694"]
+  }],
+  "urls": ["https://www.euronics.ee/"],
+  "plugins": []
+}
